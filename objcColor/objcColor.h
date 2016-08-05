@@ -19,6 +19,22 @@ FOUNDATION_EXPORT const unsigned char objcColorVersionString[];
 #import <objcColor/UIColor+VDHex.h>
 #import <objcColor/UIColor+VDChange.h>
 
+#pragma mark VDRGBColor
+#if !VDRGBColor
+#define VDRGBColor(r, g, b) \
+[UIColor colorWithRed:(r) / 255.0f green:(g) / 255.0f blue:(b) / 255.0f alpha:1.0f]
+#endif
+
+#if !VDRGBAColor
+#define VDRGBAColor(r, g, b, a) \
+[UIColor colorWithRed:(r) / 255.0f green:(g) / 255.0f blue:(b) / 255.0f alpha:(a)  / 255.0f]
+#endif
+
+#if !VDColorFromRGBHex
+#define VDColorFromRGBHex(rgbValue) \
+[UIColor colorWithRed:( (float)( (rgbValue & 0xFF0000) >> 16) ) / 255.0f green:( (float)( (rgbValue & 0xFF00) >> 8) ) / 255.0f blue:( (float)(rgbValue & 0xFF) ) / 255.0f alpha:1.0f]
+#endif
+
 #define VDColorTransparent [UIColor vd_colorWithAlphaHexValue:0x00000000]
 
 #pragma mark Pink
