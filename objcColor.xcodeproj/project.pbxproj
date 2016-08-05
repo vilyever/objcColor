@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FE6404191D54624400652BAC /* objcColor.h in Headers */ = {isa = PBXBuildFile; fileRef = FE6404181D54624400652BAC /* objcColor.h */; };
+		FE6404191D54624400652BAC /* objcColor.h in Headers */ = {isa = PBXBuildFile; fileRef = FE6404181D54624400652BAC /* objcColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FE6404201D54624500652BAC /* objcColor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6404151D54624400652BAC /* objcColor.framework */; };
 		FE6404251D54624500652BAC /* objcColorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6404241D54624500652BAC /* objcColorTests.m */; };
+		FE6404321D54627400652BAC /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = FE64042F1D54627400652BAC /* Cartfile */; };
+		FE6404331D54627400652BAC /* objcColor.podspec in Resources */ = {isa = PBXBuildFile; fileRef = FE6404301D54627400652BAC /* objcColor.podspec */; };
+		FE6404371D5462A000652BAC /* UIColor+VDHex.h in Headers */ = {isa = PBXBuildFile; fileRef = FE6404351D5462A000652BAC /* UIColor+VDHex.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE6404381D5462A000652BAC /* UIColor+VDHex.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6404361D5462A000652BAC /* UIColor+VDHex.m */; };
+		FE64043F1D54634400652BAC /* UIColor+VDChange.h in Headers */ = {isa = PBXBuildFile; fileRef = FE64043D1D54634400652BAC /* UIColor+VDChange.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE6404401D54634400652BAC /* UIColor+VDChange.m in Sources */ = {isa = PBXBuildFile; fileRef = FE64043E1D54634400652BAC /* UIColor+VDChange.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +35,13 @@
 		FE64041F1D54624500652BAC /* objcColorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = objcColorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE6404241D54624500652BAC /* objcColorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = objcColorTests.m; sourceTree = "<group>"; };
 		FE6404261D54624500652BAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE64042F1D54627400652BAC /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		FE6404301D54627400652BAC /* objcColor.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = objcColor.podspec; sourceTree = "<group>"; };
+		FE6404311D54627400652BAC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FE6404351D5462A000652BAC /* UIColor+VDHex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+VDHex.h"; sourceTree = "<group>"; };
+		FE6404361D5462A000652BAC /* UIColor+VDHex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+VDHex.m"; sourceTree = "<group>"; };
+		FE64043D1D54634400652BAC /* UIColor+VDChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+VDChange.h"; sourceTree = "<group>"; };
+		FE64043E1D54634400652BAC /* UIColor+VDChange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+VDChange.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +69,9 @@
 				FE6404171D54624400652BAC /* objcColor */,
 				FE6404231D54624500652BAC /* objcColorTests */,
 				FE6404161D54624400652BAC /* Products */,
+				FE64042F1D54627400652BAC /* Cartfile */,
+				FE6404301D54627400652BAC /* objcColor.podspec */,
+				FE6404311D54627400652BAC /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +89,10 @@
 			children = (
 				FE6404181D54624400652BAC /* objcColor.h */,
 				FE64041A1D54624400652BAC /* Info.plist */,
+				FE6404351D5462A000652BAC /* UIColor+VDHex.h */,
+				FE6404361D5462A000652BAC /* UIColor+VDHex.m */,
+				FE64043D1D54634400652BAC /* UIColor+VDChange.h */,
+				FE64043E1D54634400652BAC /* UIColor+VDChange.m */,
 			);
 			path = objcColor;
 			sourceTree = "<group>";
@@ -93,6 +113,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE6404371D5462A000652BAC /* UIColor+VDHex.h in Headers */,
+				FE64043F1D54634400652BAC /* UIColor+VDChange.h in Headers */,
 				FE6404191D54624400652BAC /* objcColor.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -178,6 +200,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE6404331D54627400652BAC /* objcColor.podspec in Resources */,
+				FE6404321D54627400652BAC /* Cartfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +219,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE6404381D5462A000652BAC /* UIColor+VDHex.m in Sources */,
+				FE6404401D54634400652BAC /* UIColor+VDChange.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
